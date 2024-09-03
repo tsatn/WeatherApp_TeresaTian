@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-const apiKey = 'c4b563ce29cb3e9a9ec3703b9ed3cc64'; // Replace with your OpenWeather API key
-
+const apiKey = 'c4b563ce29cb3e9a9ec3703b9ed3cc64'; 
 
 const WeatherApp = () => {
   
@@ -34,7 +33,7 @@ const WeatherApp = () => {
     };
 
     const getWeekdaysWeathers = async () => {
-      // const apiKey = 'c4b563ce29cb3e9a9ec3703b9ed3cc64'; // Replace with your OpenWeather API key
+
       const url = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&units=metric`;
 
       try {
