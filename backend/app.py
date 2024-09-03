@@ -3,8 +3,8 @@ import requests
 
 app = Flask(__name__)
 
-# Set your OpenWeatherMap API key
-API_KEY = 'c4b563ce29cb3e9a9ec3703b9ed3cc64'  # Replace this with your actual OpenWeatherMap API key
+# OpenWeatherMap API key
+API_KEY = 'c4b563ce29cb3e9a9ec3703b9ed3cc64'  
 
 @app.route('/')
 def home():
@@ -26,7 +26,6 @@ def get_weather():
         response.raise_for_status()  # Raise an HTTPError for bad responses
         data = response.json()
 
-        # Parse the response to get the relevant weather information
         weather = {
             'temperature': data['current']['temp'],
             'description': data['current']['weather'][0]['description'],
