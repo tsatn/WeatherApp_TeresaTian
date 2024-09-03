@@ -27,7 +27,7 @@ python app.py
 1. Navigate to the `frontend` folder and install dependencies:
 cd frontend npm install
 
-2. Run the React app:
+2. Run the React app: (npm install)
 npm start
 
 shell
